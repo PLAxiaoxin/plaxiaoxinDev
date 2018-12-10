@@ -1,34 +1,14 @@
 ---
 home: true
 heroImage: /images/photo.jpg
-actionText: 快速上手 →
+actionText: 自控力 →
 actionLink: guide.html
-features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
-
-:tada: :100:
-
-::: tip 提示
-this is a tip
-:::
-
-::: warning 注意
-this is a tip
-:::
-
-::: danger 警告
-this is a tip
-:::
-
-``` js
-<script>
-	console.log('Hello world')
-</script>
-```
+### 警句
+1.  很多时候你不会，不是因为你笨、不上进，而是你不需要。
+2. 优秀的思维方式其底层逻辑只有一种——寻找当前环境下的最优解，并严格执行。
+3. 对于年轻人来说，最可怕的事情就是自我怀疑，人的精力是有限的，当你开始怀疑人生、患失患得、自我纠结时，会引发痛苦与内耗，便没有心力去好好学习了。
+4. 一个人想要实现自己的梦想，有所成就，最快的捷径就是学会【放弃与牺牲】———— 放弃所有不重要的东西，牺牲安逸的生活与娱乐，集中全部力量去追求目标，才能梦想成真。
+5. 你处于人生的哪个阶段，就做这个阶段该做的事情，专注于眼前最重要的任务，把它做好、做精，这就是成长最快的方式。好高骛远、患得患失反而会降低你成长的速度。
+6. 你该明白的道理，日后自然会明白；你所错过的岁月，却永远不会再回来。

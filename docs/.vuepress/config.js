@@ -41,7 +41,7 @@ module.exports = {
         text: '算法题库',
         link: '/algorithm/'
       }, {
-        text: '诗和远方',
+        text: 'ECMAScript 6',
         link: '/others/'
       }, {
         text: '微博',
