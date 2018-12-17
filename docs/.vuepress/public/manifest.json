@@ -1,14 +1,14 @@
 {
-  "name": "张三",
-  "short_name": "张三",
+  "name": "PLAxiaoxin",
+  "short_name": "PLAxiaoxin",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#2196f3",
-  "description": "张三的个人主页",
-  "theme_color": "blue",
+  "description": "PLAxiaoxin的个人主页",
+  "theme_color": "red",
   "icons": [
     {
-      "src": "./photo.jpg",
+  "src": "./photo.jpg",
       "sizes": "144x144",
       "type": "image/png"
     }

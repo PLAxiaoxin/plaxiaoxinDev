@@ -4,15 +4,15 @@ module.exports = {
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', {
       rel: 'icon',
-      href: '/images/photo.jpg'
+      href: '/images/photo.png'
     }],
     ['link', {
       rel: 'manifest',
-      href: '/images/photo.jpg'
+      href: '/images/photo.png'
     }],
     ['link', {
       rel: 'apple-touch-icon',
-      href: '/images/photo.jpg'
+      href: '/images/photo.png'
     }],
     ['meta', {
       'http-quiv': 'pragma',
@@ -27,54 +27,70 @@ module.exports = {
       cotent: '0'
     }]
   ],
-  serviceWorker: true, // 是否开启 PWA
+  serviceWorker: false, // 是否开启 PWA
   base: '/', // 部署到github相关的配置
   markdown: {
     lineNumbers: true // 代码块是否显示行号
   },
   themeConfig: {
+    date_format: 'yyyy-MM-dd HH:mm:ss',
     nav: [ // 导航栏配置
       {
-        text: '前端基础',
-        link: '/accumulate/'
+        text: 'Bolg',
+        link: '/blog/'
       }, {
-        text: '算法题库',
-        link: '/algorithm/'
+        text: '前端',
+        items: [{
+          text: 'HTML',
+          link: '/frontEnd/html/'
+        }, {
+          text: 'CSS',
+          link: '/frontEnd/css/'
+        }, {
+          text: 'JAVASCRIPT',
+          link: '/frontEnd/javascript/'
+        }]
       }, {
-        text: 'ECMAScript 6',
-        link: '/others/'
+        text: '后台',
+        items: [{
+          text: 'NODE',
+          link: '/rearEnd/node/'
+        }, {
+          text: 'PHP',
+          link: '/rearEnd/php/'
+        }]
       }, {
-        text: '微博',
-        link: 'http://plaxiaoxin.com'
+        text: '构建工具',
+        items: [{
+          text: 'WEBPACK',
+          link: '/buildTool/webpack/'
+        }, {
+          text: 'GULP',
+          link: '/buildTool/gulp/'
+        }, {
+          text: 'GRUNT',
+          link: '/buildTool/grunt/'
+        }]
+      }, {
+        text: '关于我',
+        link: '/my/'
+      }, {
+        text: 'github',
+        link: 'https://github.com/PLAxiaoxin'
       }
     ],
     sidebar: {
-      '/accumulate/': [{
-        title: '前端积累',
-        children: [
-          '/accumulate/1.html',
-          '/accumulate/2.html',
-          '/accumulate/3.html',
-          '/accumulate/4.html',
-          '/accumulate/5.html',
-          '/accumulate/6.html',
-          '/accumulate/7.html',
-          '/accumulate/8.html',
-          '/accumulate/9.html',
-          '/accumulate/10.html',
-          '/accumulate/11.html',
-        ]
-      }],
-      '/algorithm/': [
-        '/algorithm/', {
-          title: '第二组侧边栏下拉框的标题1',
-          children: [
-            '/algorithm/'
-          ]
-        }
+      '/blog/': [
+        'a',
+        'b',
+        'c',
+        'd',
+        'e',
+        'f',
+        'g',
+        'h'
       ]
     },
-    sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2
   }
 };
