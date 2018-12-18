@@ -1,96 +1,112 @@
 module.exports = {
-  title: '个人主页',
-  description: 'Personal Website',
-  head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', {
-      rel: 'icon',
-      href: '/images/photo.png'
-    }],
-    ['link', {
-      rel: 'manifest',
-      href: '/images/photo.png'
-    }],
-    ['link', {
-      rel: 'apple-touch-icon',
-      href: '/images/photo.png'
-    }],
-    ['meta', {
-      'http-quiv': 'pragma',
-      cotent: 'no-cache'
-    }],
-    ['meta', {
-      'http-quiv': 'pragma',
-      cotent: 'no-cache,must-revalidate'
-    }],
-    ['meta', {
-      'http-quiv': 'expires',
-      cotent: '0'
-    }]
-  ],
-  serviceWorker: false, // 是否开启 PWA
-  base: '/', // 部署到github相关的配置
+  title: 'PLAxiaoxin的博客',
+  // TODO: 加到meta上
+  description: '你对现在不满，是你曾经不努力的结果！',
+  base: '/',
   markdown: {
-    lineNumbers: true // 代码块是否显示行号
+    lineNumbers: true // 代码行数
   },
   themeConfig: {
-    date_format: 'yyyy-MM-dd HH:mm:ss',
-    nav: [ // 导航栏配置
-      {
-        text: 'Bolg',
-        link: '/blog/'
-      }, {
-        text: '前端',
-        items: [{
-          text: 'HTML',
-          link: '/frontEnd/html/'
-        }, {
-          text: 'CSS',
-          link: '/frontEnd/css/'
-        }, {
-          text: 'JAVASCRIPT',
-          link: '/frontEnd/javascript/'
-        }]
-      }, {
-        text: '后台',
-        items: [{
-          text: 'NODE',
-          link: '/rearEnd/node/'
-        }, {
-          text: 'PHP',
-          link: '/rearEnd/php/'
-        }]
-      }, {
-        text: '构建工具',
-        items: [{
-          text: 'WEBPACK',
-          link: '/buildTool/webpack/'
-        }, {
-          text: 'GULP',
-          link: '/buildTool/gulp/'
-        }, {
-          text: 'GRUNT',
-          link: '/buildTool/grunt/'
-        }]
-      }, {
-        text: '关于我',
-        link: '/my/'
-      }, {
-        text: 'github',
-        link: 'https://github.com/PLAxiaoxin'
+    editLinks: true, // 编辑链接
+    editLinkText: '帮助我改善这个页面', // 链接字段
+    serviceWorker: {
+      updatePopup: {
+        // 刷新内容的弹窗
+        message: '就在刚刚,OBKoro1更新了内容',
+        buttonText: '点这里'
       }
-    ],
+    },
+    sidebarDepth: 3,
+    nav: [{
+      text: '文章',
+      link: '/blog/'
+    }, {
+      text: '前端积累',
+      link: '/frontEnd/'
+    }, {
+      text: '后台积累',
+      link: '/rearEnd/'
+    }, {
+      text: '构建工具',
+      link: '/buildTool/'
+    }, {
+      text: '关于我',
+      link: '/my/'
+    }, {
+      text: 'github',
+      link: 'https://github.com/PLAxiaoxin'
+    }],
     sidebar: {
       '/blog/': [
-        'a',
-        'b',
-        'c',
-        'd',
-        'e',
-        'f',
-        'g',
-        'h'
-      ]
-    },
-    sidebarDepth: 2
+        '/blog/', {
+          title: '所有文章',
+          // TODO: 取消折叠
+          // collapsable: false,
+          children: [
+            '/blog/article/a',
+            '/blog/article/b',
+            '/blog/article/c',
+            '/blog/article/d',
+            '/blog/article/e',
+            '/blog/article/f',
+            '/blog/article/g',
+            '/blog/article/h',
+            '/blog/article/gg',
+          ]
+        }
+      ],
+      '/frontEnd/': [
+        '/frontEnd/', {
+          title: 'HTML',
+          children: [
+            '/frontEnd/html/html1',
+            '/frontEnd/html/html2',
+          ]
+        }, {
+          title: 'CSS',
+          children: [
+            '/frontEnd/css/css1',
+            '/frontEnd/css/css2',
+          ]
+        }, {
+          title: 'JavaScript',
+          children: [
+            '/frontEnd/javascript/js1',
+            '/frontEnd/javascript/js2',
+          ]
+        }
+      ],
+      '/rearEnd/': [
+        '/rearEnd/', {
+          title: 'Node',
+          children: [
+            '/rearEnd/node/node1',
+          ]
+        }, {
+          title: 'PHP',
+          children: [
+            '/rearEnd/php/php1',
+          ]
+        }
+      ],
+      '/buildTool/': [
+        '/buildTool/', {
+          title: 'WebPack',
+          children: [
+            '/buildTool/webpack/wp1',
+          ]
+        }, {
+          title: 'Gulp',
+          children: [
+            '/buildTool/gulp/gulp1',
+          ]
+        }, {
+          title: 'Grunt',
+          children: [
+            '/buildTool/grunt/grunt1',
+          ]
+        }
+      ],
+    }
   }
 };

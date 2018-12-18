@@ -1,7 +1,38 @@
 ---
 home: true
 heroImage: /images/photo.png
-actionText:  主页→
+actionText: 最新更新ღ
 actionLink: guide.html
-footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
+---
+> 有个1234
+1.
+2.
+3.
+4.
+
+<style type="text/css">
+.home .hero img{
+  width: 300px;
+  height: 300px;
+}
+.description{
+   background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+            #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+   border: none;
+   color: transparent; /*文字填充色为透明*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;          /*背景剪裁为文字，只将文字显示为背景*/
+    background-size: 200% 100%;            /*背景图片向水平方向扩大一倍，这样background-position才有移动与变化的空间*/
+    /* 动画 */
+    animation: masked-animation 4s infinite linear;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;   /*background-position 属性设置背景图像的起始位置。*/
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+</style>
