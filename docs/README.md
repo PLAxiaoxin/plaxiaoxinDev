@@ -5,16 +5,21 @@ actionText: 最新更新ღ
 actionLink: guide.html
 ---
 ---
-> 有个1234
-1.
-2.
-3.
-4.
+> 只有透彻地认识到，某件事情是自己一生都避不开、逃不掉的，才有动力坚持做好它。
 
 <style type="text/css">
+.home .hero .description{
+  max-width: 40rem;
+}
 .home .hero img{
   width: 300px;
   height: 300px;
+  border-radius: 50%;
+  transition: transform 2s ease-in-out;
+  transform: rotateZ(0deg);
+}
+.home .hero img:hover{
+  transform: rotateZ(360deg);
 }
 .description{
    background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,

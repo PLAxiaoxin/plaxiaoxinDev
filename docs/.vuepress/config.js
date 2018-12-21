@@ -1,7 +1,7 @@
 module.exports = {
   title: 'PLAxiaoxin的博客',
   // TODO: 加到meta上
-  description: '你对现在不满，是你曾经不努力的结果！',
+  description: '只有那些你深知一辈子逃不掉的东西，才能坚持下去。',
   base: '/',
   markdown: {
     lineNumbers: true // 代码行数
