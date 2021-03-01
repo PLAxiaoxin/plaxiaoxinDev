@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "element-ui": "^2.4.11",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.23.0",
     "vue": "^2.5.21"
   }
 }
